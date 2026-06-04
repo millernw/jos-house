@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>04-structure</title>
+</head>
+<body><h1 id='04-----site-structure--layout'>04 — Site Structure &amp; Layout</h1>
+<h2 id='jos-house'>Jo&#39;s House</h2>
+<blockquote><p>Paste this alongside 00-master-prompt.md when building navigation, page layouts, or structural scaffolding.</p>
+</blockquote>
+<hr />
+<h2 id='site-map'>Site Map</h2>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>Page</th><th>Route</th><th>Priority</th><th>Goal</th></tr></thead>
+<tbody><tr><td>Home</td><td><code>/</code></td><td>P1</td><td>Primary conversion page — full StoryBrand narrative, drives bookings and course signups</td></tr><tr><td>About / Bryan&#39;s Story</td><td><code>/about</code></td><td>P1</td><td>Build trust through Bryan&#39;s personal story; the most important credibility page on the site</td></tr><tr><td>Bee Bed Therapy</td><td><code>/bee-bed-therapy</code></td><td>P1</td><td>Educate visitors who don&#39;t know what bee bed therapy is before they&#39;ll consider booking</td></tr><tr><td>Book Your Session</td><td><code>/book</code></td><td>P1</td><td>Dedicated booking page with GHL calendar widget embedded — no distractions</td></tr><tr><td>Free Course</td><td><code>/free-course</code></td><td>P1</td><td>Lead generation landing page — captures email in exchange for free course delivery</td></tr><tr><td>Contact</td><td><code>/contact</code></td><td>P1</td><td>Simple inquiry form; warm invitation from Bryan</td></tr><tr><td>Testimonials / Stories</td><td><code>/stories</code></td><td>P2</td><td>Real guest testimonials once collected — supports trust and conversion</td></tr><tr><td>FAQ</td><td><code>/faq</code></td><td>P2</td><td>Handles objections and reduces pre-booking anxiety</td></tr><tr><td>Blog / Learning</td><td><code>/blog</code></td><td>P3</td><td>Educational content on bee therapy, stress, grief — builds local SEO over time</td></tr><tr><td>Farm &amp; Homestead</td><td><code>/farm</code></td><td>P3</td><td>Context and warmth; shows the full Jo&#39;s House experience</td></tr><tr><td>Honey &amp; Products</td><td><code>/honey</code></td><td>P3</td><td>Raw local honey sales — mentioned in About page; worth a dedicated page when ready</td></tr><tr><td>Privacy Policy</td><td><code>/privacy</code></td><td>P1</td><td>Legal requirement — can be simple GHL-generated page</td></tr><tr><td>Terms of Service</td><td><code>/terms</code></td><td>P1</td><td>Legal — simple</td></tr></tbody>
+</table></figure>
+<hr />
+<h2 id='navigation'>Navigation</h2>
+<p><strong>Header nav:</strong></p>
+<ul>
+<li>Style: Sticky top bar — transparent over hero, transitions to solid warm cream <code>#FAF7F0</code> with subtle shadow on scroll</li>
+<li>Logo: Left-aligned — Jo&#39;s House logo image</li>
+<li>Nav links (desktop): About | Bee Bed Therapy | Free Course | Contact</li>
+<li>Primary CTA button (right): Book Your Session — Golden Amber <code>#D4920A</code>, pill-shaped</li>
+<li>Mobile nav: Hamburger icon → full-screen overlay, cream background, centered links stacked vertically, large touch targets</li>
+<li>Active state: Amber underline on current page link</li>
+
+</ul>
+<hr />
+<h2 id='homepage-section-order'>Homepage Section Order</h2>
+<p>Every section has one job. Do not add copy or visual elements that don&#39;t serve that section&#39;s goal.</p>
+<ol start='' >
+<li><p><strong>Hero</strong></p>
+<ul>
+<li>Layout: Full-bleed atmospheric farm/hive photo as background, dark warm overlay for text legibility. Headline and subheadline centered or left-aligned. Two CTA buttons below — primary (Book) and secondary (Free Course link).</li>
+<li>Goal: Hook the exhausted visitor in the first 3 seconds. Name their pain before anything else.</li>
+<li>Formula: PAS — Pain (headline), Agitate (subheadline names why nothing else has worked), Solution (bee bed therapy at Jo&#39;s House)</li>
+
+</ul>
+</li>
+<li><p><strong>Problem Section</strong></p>
+<ul>
+<li>Layout: Centered text block on warm cream background. Wide, readable paragraph. No imagery needed — this section is all about words landing.</li>
+<li>Goal: Validate the visitor&#39;s experience. Make her feel understood before making any claim.</li>
+<li>Formula: PAS — name the villain (overstimulation culture + inadequate local options)</li>
+
+</ul>
+</li>
+<li><p><strong>Guide Section — Bryan</strong></p>
+<ul>
+<li>Layout: Two-column on desktop (Bryan photo left, text right) / stacked on mobile. Warm surface background <code>#F0EBE0</code>. Photo should feel candid and warm — Bryan at the farm or with the hives, not a headshot.</li>
+<li>Goal: Establish Bryan as someone who understands her situation from the inside, then establish authority.</li>
+<li>Formula: StoryBrand Guide — empathy first, authority second. End with 3 placeholder testimonial cards.</li>
+<li>Testimonial card layout: Quote text, name, and brief context. 3-column on desktop, single swipeable carousel on mobile.</li>
+
+</ul>
+</li>
+<li><p><strong>How It Works — 3 Steps</strong></p>
+<ul>
+<li>Layout: Horizontal 3-step flow on desktop (numbered cards side by side), stacked vertically on mobile. Icon or small illustration for each step. CTA button below.</li>
+<li>Goal: Reduce anxiety about the unknown. Make booking feel simple and clear.</li>
+<li>Formula: StoryBrand 3-step Plan — Book, Learn, Rest</li>
+
+</ul>
+</li>
+<li><p><strong>Success Section</strong></p>
+<ul>
+<li>Layout: Full-bleed warm photo background (farm, golden light, peaceful scene) with text overlay, or alternating image/text block. Let the copy breathe.</li>
+<li>Goal: Paint the transformation — what life looks and feels like after a session.</li>
+<li>Formula: BAB — Before acknowledged (carried tension), After painted (body exhaled, mind quiet, sleep comes easier)</li>
+
+</ul>
+</li>
+<li><p><strong>Failure / Stakes Section</strong></p>
+<ul>
+<li>Layout: Simple centered text block on slightly deeper surface (<code>#F0EBE0</code>). No imagery. Short copy — this section should be brief and not dwell.</li>
+<li>Goal: Name the cost of inaction without fear-mongering. One CTA button.</li>
+<li>Formula: PAS reversed — the cost of doing nothing is accepting that this is just how life feels</li>
+
+</ul>
+</li>
+<li><p><strong>Transitional CTA — Free Course</strong></p>
+<ul>
+<li>Layout: Two-column on desktop — left: copy and form / right: warm illustrative or photographic element. Full-width band with contrasting background (Deep Brown <code>#4A2C0A</code> or Deep Espresso <code>#2C1A06</code>), warm cream text.</li>
+<li>Goal: Capture visitors who are curious but not ready to book. Warm on-ramp.</li>
+<li>Formula: AIDA — Attention (not ready to book?), Interest (what&#39;s in the course), Desire (talk to Bryan personally), Action (download)</li>
+
+</ul>
+</li>
+<li><p><strong>Final CTA</strong></p>
+<ul>
+<li>Layout: Full-width section, centered. Large Cormorant Garamond headline, single Book Your Session button. Minimal — no competing elements.</li>
+<li>Goal: Last conversion push before the footer.</li>
+<li>Formula: AIDA compressed — single desire statement, single action</li>
+
+</ul>
+</li>
+<li><p><strong>Footer</strong></p>
+<ul>
+<li>See Footer section below</li>
+
+</ul>
+</li>
+
+</ol>
+<hr />
+<h2 id='footer'>Footer</h2>
+<p><strong>Background:</strong> Dark Espresso <code>#2C1A06</code>
+<strong>Text:</strong> Warm Cream <code>#FAF7F0</code> and Caramel <code>#8B5E3C</code></p>
+<p><strong>Structure: 3 columns + bottom bar</strong></p>
+<ul>
+<li><strong>Column 1 — Jo&#39;s House:</strong>
+Logo (white/cream version)
+Tagline: Find Rest. Feel Like Yourself Again.
+Address: 10469 S. SR5, Whitley County, Indiana 46787</li>
+<li><strong>Column 2 — Visit:</strong>
+Book Your Session
+Bee Bed Therapy
+Free Course
+About</li>
+<li><strong>Column 3 — Connect:</strong>
+Contact
+[Facebook — if available]
+[Instagram — if available]</li>
+<li><strong>Bottom bar:</strong>
+© 2026 Jo&#39;s House. All rights reserved.
+Jo&#39;s House is a registered 501(c)(3) nonprofit organization.
+Privacy Policy | Terms of Service</li>
+
+</ul>
+<hr />
+<h2 id='responsive-behavior'>Responsive Behavior</h2>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>Section</th><th>Mobile (&lt; 768px)</th><th>Tablet (768–1024px)</th><th>Desktop (&gt; 1024px)</th></tr></thead>
+<tbody><tr><td>Nav</td><td>Hamburger → full-screen overlay</td><td>Hamburger or condensed links</td><td>Full nav with CTA button</td></tr><tr><td>Hero</td><td>Full-bleed photo, stacked text, both CTAs stacked</td><td>Same as mobile</td><td>Text left or centered, large type</td></tr><tr><td>Problem</td><td>Single column, generous padding</td><td>Single column, wider</td><td>Centered max-width 700px</td></tr><tr><td>Guide / Bryan</td><td>Photo top, text below</td><td>Side by side</td><td>Side by side, larger photo</td></tr><tr><td>Testimonials</td><td>Single card, swipe carousel</td><td>2 cards</td><td>3 cards side by side</td></tr><tr><td>How It Works</td><td>3 cards stacked vertically</td><td>3 cards horizontal</td><td>3 cards horizontal, wider</td></tr><tr><td>Success</td><td>Full-bleed photo, text overlay</td><td>Same</td><td>Text + photo alternating or overlay</td></tr><tr><td>Free Course CTA</td><td>Stacked, form below copy</td><td>Side by side</td><td>Side by side</td></tr><tr><td>Footer</td><td>Single column, stacked</td><td>2 columns</td><td>3 columns + bottom bar</td></tr></tbody>
+</table></figure>
+<hr />
+<h2 id='interaction-patterns'>Interaction Patterns</h2>
+<ul>
+<li><strong>Scroll behavior:</strong> Smooth scroll throughout</li>
+<li><strong>Sticky elements:</strong> Nav only — sticks to top on scroll, transparent over hero, solid on all other sections</li>
+<li><strong>Scroll animations:</strong> Fade-up on all text blocks and cards (trigger at 80% viewport); parallax on full-bleed photo sections</li>
+<li><strong>Hover states:</strong> Cards — subtle lift (translateY -3px) + shadow increase; Buttons — darken by 10%, shadow; Nav links — amber underline slides in</li>
+<li><strong>Carousel behavior:</strong> Testimonials — manual only on desktop, swipe on mobile; no auto-play</li>
+<li><strong>Accordion behavior:</strong> FAQ page — one open at a time; smooth expand/collapse animation</li>
+<li><strong>Modals:</strong> None at launch</li>
+<li><strong>Back to top button:</strong> Yes — appears after 600px scroll, amber circle with up arrow, fixed bottom-right</li>
+<li><strong>Form feedback:</strong> Inline validation, success state with warm confirmation message (&quot;You&#39;re all set — check your inbox.&quot;)</li>
+
+</ul>
+<hr />
+<h2 id='component-needs'>Component Needs</h2>
+<ul>
+<li><input type='checkbox' /><p>Sticky nav with transparent-to-solid scroll transition</p>
+</li>
+<li><input type='checkbox' /><p>Hero with full-bleed photo + warm overlay + dual CTA layout</p>
+</li>
+<li><input type='checkbox' /><p>3-step plan cards (How It Works)</p>
+</li>
+<li><input type='checkbox' /><p>Testimonial card (quote + name + context) — placeholder-ready</p>
+</li>
+<li><input type='checkbox' /><p>Free course capture form (First Name + Email + CTA)</p>
+</li>
+<li><input type='checkbox' /><p>Booking embed block (GHL Calendar widget)</p>
+</li>
+<li><input type='checkbox' /><p>Full-screen mobile nav overlay</p>
+</li>
+<li><input type='checkbox' /><p>Back to top button</p>
+</li>
+<li><input type='checkbox' /><p>Section divider — botanical SVG or gold hairline</p>
+</li>
+
+</ul>
+<hr />
+<h2 id='whitespace--density'>Whitespace &amp; Density</h2>
+<ul>
+<li><strong>Section vertical padding:</strong> Generous — 100–120px desktop, 64–80px mobile</li>
+<li><strong>Card internal padding:</strong> 32px</li>
+<li><strong>Line height (body):</strong> 1.75 — open and easy to read</li>
+<li><strong>Overall feel:</strong> Open and airy — this site should feel as spacious as the farm it represents</li>
+<li><strong>Max content width:</strong> 1200px centered; long-form text sections constrained to 720px for readability</li>
+
+</ul>
+</body>
+</html>

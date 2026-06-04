@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>03-tech-specs</title>
+</head>
+<body><h1 id='03-----technical-specs'>03 — Technical Specs</h1>
+<h2 id='jos-house'>Jo&#39;s House</h2>
+<blockquote><p>Paste this alongside 00-master-prompt.md at the start of any technical build session.</p>
+</blockquote>
+<hr />
+<h2 id='platform'>Platform</h2>
+<ul>
+<li><strong>Builder:</strong> GoHighLevel (GHL) Studio AI</li>
+<li><strong>Hosting:</strong> GoHighLevel — all pages hosted natively within GHL</li>
+<li><strong>CMS:</strong> GHL native — content editable via the GHL dashboard</li>
+<li><strong>Domain:</strong> joshouse.com (connect via GHL domain settings)</li>
+
+</ul>
+<p><strong>Note:</strong> This site is built entirely within GoHighLevel. All booking, forms, email automation, CRM pipelines, and contact management are handled natively by GHL. No external integrations are required. When GHL Studio AI asks about framework, output format, or external tools — the answer is always &quot;native GHL.&quot;</p>
+<hr />
+<h2 id='integrations-----all-native-to-gohighlevel'>Integrations — All Native to GoHighLevel</h2>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>Function</th><th>GHL Tool</th><th>Notes</th></tr></thead>
+<tbody><tr><td>Session booking</td><td>GHL Calendar / Booking widget</td><td>Embed booking widget on Book page and as CTA throughout site</td></tr><tr><td>Contact forms</td><td>GHL Forms builder</td><td>Contact page form, any inquiry forms</td></tr><tr><td>Free course delivery</td><td>GHL Email automation / Workflow</td><td>On form submit → deliver course via email sequence</td></tr><tr><td>Email list &amp; follow-up</td><td>GHL Email marketing + Workflows</td><td>Capture leads from free course form; build nurture sequence</td></tr><tr><td>CRM</td><td>GHL CRM</td><td>All form submissions and bookings feed into GHL pipeline</td></tr><tr><td>Funnel/landing pages</td><td>GHL Funnels or Site builder</td><td>Free course landing page may be built as a GHL funnel</td></tr><tr><td>SMS follow-up</td><td>GHL SMS automation</td><td>Optional: post-booking confirmation and reminder texts</td></tr><tr><td>Reviews / testimonials</td><td>GHL Reputation management</td><td>Collect and display Google reviews over time</td></tr><tr><td>Analytics</td><td>GHL built-in analytics + Google Analytics 4</td><td>Add GA4 tracking code via GHL site settings</td></tr><tr><td>Google Business</td><td>Google Business Profile (external)</td><td>Set up separately; links to joshouse.com</td></tr></tbody>
+</table></figure>
+<hr />
+<h2 id='forms--data-collection'>Forms &amp; Data Collection</h2>
+<figure class='table-figure'><table>
+<thead>
+<tr><th>Form</th><th>Fields</th><th>GHL Destination</th><th>Notes</th></tr></thead>
+<tbody><tr><td>Free course signup</td><td>First Name, Email</td><td>GHL contact + free course workflow trigger</td><td>Triggers email automation to deliver course</td></tr><tr><td>Contact / general inquiry</td><td>First Name, Last Name, Email, Phone (optional), Message</td><td>GHL contact + notification to Bryan</td><td>Bryan should receive email or SMS notification on submit</td></tr><tr><td>Booking</td><td>Handled by GHL Calendar widget</td><td>GHL calendar + confirmation workflow</td><td>Confirmation + reminder emails automated via GHL</td></tr></tbody>
+</table></figure>
+<hr />
+<h2 id='email-automation-ghl-workflows'>Email Automation (GHL Workflows)</h2>
+<p><strong>Free Course workflow:</strong></p>
+<ol start='' >
+<li>Visitor submits first name + email on Free Course landing page</li>
+<li>GHL creates contact, tags &quot;free-course-lead&quot;</li>
+<li>Immediate: deliver free course via email (link or PDF)</li>
+<li>Day 3: follow-up email — &quot;Did you get a chance to look through it? Here&#39;s what one person said after their first session.&quot;</li>
+<li>Day 7: Bryan personal-voice email — &quot;Still have questions? Here&#39;s my number.&quot;</li>
+<li>Day 14: soft booking CTA — &quot;When you&#39;re ready, sessions are easy to book.&quot;</li>
+
+</ol>
+<p><strong>Booking confirmation workflow:</strong></p>
+<ol start='' >
+<li>Guest books session via GHL calendar</li>
+<li>Immediate: confirmation email with session details, what to expect, and farm address</li>
+<li>24 hours before: reminder email with directions and prep notes</li>
+<li>Post-session (Day 1): thank-you email with a note from Bryan; invite to leave a review</li>
+
+</ol>
+<hr />
+<h2 id='authentication--member-areas'>Authentication &amp; Member Areas</h2>
+<ul>
+<li><strong>Auth needed:</strong> No — public-facing site only at launch</li>
+<li><strong>Future consideration:</strong> If Bryan creates a paid course or member content, GHL Memberships can handle this natively without a separate tool</li>
+
+</ul>
+<hr />
+<h2 id='seo--performance'>SEO &amp; Performance</h2>
+<ul>
+<li><strong>SEO priority:</strong> Important — local SEO is a primary discovery channel for this audience</li>
+<li><strong>Local SEO:</strong> Ensure Google Business Profile is set up and linked; use Whitley County / northeast Indiana location language throughout copy</li>
+<li><strong>Schema markup:</strong> Add LocalBusiness and Service schema via GHL or custom code injection (business name, address, service type, geo coordinates)</li>
+<li><strong>Sitemap:</strong> Generate via GHL site settings — submit to Google Search Console</li>
+<li><strong>Page speed:</strong> Optimize all images before upload — compress to WebP where possible; avoid large uncompressed HEIC files</li>
+<li><strong>OG/social meta:</strong> Set title, description, and OG image for each page in GHL page settings</li>
+
+</ul>
+<hr />
+<h2 id='known-constraints'>Known Constraints</h2>
+<ul>
+<li><strong>501(c)(3) language:</strong> Footer and About page must clearly state nonprofit status — &quot;Jo&#39;s House is a registered 501(c)(3) nonprofit organization.&quot;</li>
+<li><strong>No HIPAA requirements:</strong> Jo&#39;s House is a wellness center, not a healthcare provider. Standard GHL forms are appropriate.</li>
+<li><strong>Testimonials:</strong> Currently placeholder — do not fabricate or publish fake testimonials. Launch with a &quot;Coming soon&quot; or omit testimonial cards until real ones are collected via GHL Reputation management.</li>
+<li><strong>Image formats:</strong> Assets are currently a mix of HEIC, JPG, PNG. Convert all HEIC files to JPG or WebP before uploading to GHL — HEIC is not reliably supported in web browsers.</li>
+<li><strong>Mobile-first:</strong> The primary visitor is discovering this site on a phone. Every section must be designed and tested on mobile before desktop.</li>
+<li><strong>No paid npm packages, no external code dependencies</strong> — all functionality should be native GHL or simple CSS/JS added via GHL custom code blocks.</li>
+
+</ul>
+</body>
+</html>
